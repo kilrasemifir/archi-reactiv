@@ -5,3 +5,13 @@ services:
       - "27017:27017"
     volumes:
       - ./data:/data/db
+  
+  oders:
+    build: ./orders
+    ports:
+      - "8000:8001"
+    environment:
+      - MONGO_URL=mongo
+      - MONGO_DB=orders
+    depends_on:
+      - mongo
