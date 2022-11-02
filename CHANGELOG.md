@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/kilrasemifir/archi-reactiv/compare/v1.1.0...v1.2.0) (2022-11-02)
+
+
+### Features
+
+* connexion avec kafka ([70307e2](https://github.com/kilrasemifir/archi-reactiv/commit/70307e2052a1602013f3f0be99d32c1fffd8fc1d))
+* **stocks:** ajout du ms stocks ([d5b4440](https://github.com/kilrasemifir/archi-reactiv/commit/d5b4440e19cc70d7af1ee33aa5cb9a541875f615))
+
 ## 1.1.0 (2022-11-02)
 
 
