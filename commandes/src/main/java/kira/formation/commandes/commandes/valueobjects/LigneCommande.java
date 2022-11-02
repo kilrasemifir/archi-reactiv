@@ -1,4 +1,4 @@
-package kira.formation.orders.orders.valueobjects;
+package kira.formation.commandes.commandes.valueobjects;
 
 /**
  * Représente une ligne d'une commande

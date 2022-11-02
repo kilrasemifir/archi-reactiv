@@ -1,4 +1,4 @@
-package kira.formation.orders.orders;
+package kira.formation.commandes.commandes;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

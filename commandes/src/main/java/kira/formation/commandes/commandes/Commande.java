@@ -1,6 +1,6 @@
-package kira.formation.orders.orders;
+package kira.formation.commandes.commandes;
 
-import kira.formation.orders.orders.valueobjects.LigneCommande;
+import kira.formation.commandes.commandes.valueobjects.LigneCommande;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

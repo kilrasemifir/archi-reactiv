@@ -1,4 +1,4 @@
-package kira.formation.orders;
+package kira.formation.commandes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

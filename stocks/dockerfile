@@ -9,6 +9,6 @@ RUN gradle clean build
 
 FROM openjdk:11
 WORKDIR /home/application/java
-COPY --from=compile "/home/source/java/build/libs/commandes-0.0.1.jar" .
+COPY --from=compile "/home/source/java/build/libs/stocks-1.1.0.jar" .
 EXPOSE 8080
-ENTRYPOINT [ "java", "-jar", "/home/application/java/commandes-0.0.1.jar"]
+ENTRYPOINT [ "java", "-jar", "/home/application/java/stocks-1.1.0.jar"]

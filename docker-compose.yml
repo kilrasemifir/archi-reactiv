@@ -9,11 +9,24 @@ services:
   commandes:
     build: ./commandes
     ports:
-      - "8000:8001"
+      - "8000:8080"
     environment:
       - MONGO_URL=mongo
-      - MONGO_DB=orders
+      - MONGO_DB=commandes
       - KAFKA_HOST=broker
+      - KAFKA_TOPIC=commandes
+    depends_on:
+      - mongo
+
+  stocks:
+    build: ./stocks
+    ports:
+      - "8001:8080"
+    environment:
+      - MONGO_URL=mongo
+      - MONGO_DB=commandes
+      - KAFKA_HOST=broker
+      - KAFKA_TOPIC=commandes
     depends_on:
       - mongo
   
@@ -28,8 +41,6 @@ services:
     image: confluentinc/cp-kafka:7.0.1
     container_name: broker
     ports:
-    # To learn about configuring Kafka for access across networks see
-    # https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/
       - "9092:9092"
     depends_on:
       - zookeeper

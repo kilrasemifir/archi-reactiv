@@ -1,4 +1,4 @@
-package kira.formation.orders.orders;
+package kira.formation.commandes.commandes;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
  * Contrôleur REST pour les commandes.
  */
 @RestController
-@RequestMapping("api/orders")
+@RequestMapping("api/commandes")
 public class CommandeController {
 
         private CommandeService orderService;

@@ -1,10 +1,14 @@
-package kira.formation.orders.orders;
+package kira.formation.commandes.commandes;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CommandeProducer {
+
+    @Value(value = "${kafka.topic}")
+    private String topic;
 
     private final KafkaTemplate<String, Commande> kafkaTemplate;
 
@@ -13,6 +17,6 @@ public class CommandeProducer {
     }
 
     public void sendOrder(Commande commande) {
-        kafkaTemplate.send("orders", commande);
+        kafkaTemplate.send(topic, commande);
     }
 }

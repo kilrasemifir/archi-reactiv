@@ -1,7 +1,6 @@
-package kira.formation.orders;
+package kira.formation.commandes;
 
-import com.fasterxml.jackson.databind.JsonSerializer;
-import kira.formation.orders.orders.Commande;
+import kira.formation.commandes.commandes.Commande;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -12,6 +11,7 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaAdmin;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
+import org.springframework.kafka.support.serializer.JsonSerializer;
 
 import java.util.HashMap;
 import java.util.Map;
