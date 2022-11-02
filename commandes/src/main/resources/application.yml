@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST:localhost}
+      database: ${MONGO_DB:mydb}
+kafka:
+  bootstrapAddress: ${KAFKA_HOST:localhost}:9092
+  topic: ${KAFKA_TOPIC:commandes}
